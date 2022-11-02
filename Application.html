@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Add employee</h1>
+    <form>
+      <fieldset>
+        <legend>Employee information</legend>
+          <fieldset>
+            <legend>Personal information</legend>
+            <div>
+              <label for="firstname">First name*: </label><br />
+              <input id="firstname" placeholder="First name" required/><br />
+              <label for="lastname">Last name*:</label><br />
+              <input id="lastname" placeholder="Last name" required/><br />
+              <label for="birthdate">Birth date*:</label><br />
+              <input type="date" id="birthdate" name="bate" required/><br />
+              <legend>Title of Courtesy*:</legend>
+              <div>
+                <input
+                  type="radio"
+                  id="contactChoice1"
+                  name="1"
+                  value="dr"
+                  required
+                />
+                <label for="contactChoice1">Dr.</label>
+                <input
+                  type="radio"
+                  id="contactChoice2"
+                  name="1"
+                  value="mr"
+                  required
+                />
+                <label for="contactChoice2">Mr.</label>
+                <input
+                  type="radio"
+                  id="contactChoice3"
+                  name="1"
+                  value="mrs"
+                  required
+                />
+                <label for="contactChoice3">Mrs.</label>
+                <input
+                  type="radio"
+                  id="contactChoice4"
+                  name="1"
+                  value="ms"
+                  required
+                />
+                <label for="contactChoice4">Ms</label>
+              </div>
+            </div>
+          </fieldset>
+            <fieldset>
+              <legend>Contant information</legend>
+              <div>
+                <label for="address">Address*: </label><br />
+                <input id="address" placeholder="Address" required/><br />
+                <label for="city">City*:</label><br />
+                <input id="city" placeholder="City" required/><br />
+                <label for="region">Region*:</label><br />
+                <input id="region" placeholder="Region" required/><br />
+                <label for="postalcode">Postal code:</label><br />
+                <input type="number" placeholder="1000" name="code" min="1000" max="9999"/><br />
+                <label for="country">Country*:</label><br />
+                <input id="country" placeholder="Country" required/><br />
+                <label fot="tel">Mobile phone*:</label><br/>
+                <input type="tel" placeholder="+359888123456" name="tel" pattern="\+359\d{9}" required/><br />
+                <label for="email">Email*:</label><br/>
+                <input type="email" placeholder="example@example.com"required/><br />
+                </div>
+              </div>
+            </fieldset>
+      </fieldset>
+        <fieldset>
+          <legend>Job information</legend>
+          <div>
+            <label for="jobtitle">Job title*: </label><br />
+            <input id="jobtitle" placeholder="Job title" required/><br />
+            <label for="manager">Manager*:</label><br />
+            <select name="manager" id="manager" required>
+                <option value="">--Please select manager--</option>
+                <option value="manager1">Vasi</option>
+                <option value="manager2">Nikol</option>
+                <option value="manager3">Gabi</option>
+                <option value="manager4">Desi</option>
+                <option value="manager5">Pavlin</option>
+            </select> <br/>
+            <label for="pass">Password*: </label><br />
+            <input type="password" placeholder="Password" required/><br />
+            <label for="repeatpass">Repeat Password*: </label><br />
+            <input type="password" placeholder="Repeat Password" required/><br />
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Additional information</legend>
+          <div>
+            <label for="notes">Notes: </label><br />
+            <textarea id="notes" name="story" rows="3" cols="33">Some additional notes...</textarea>
+            </div>
+          </div>
+        </fieldset>
+        <input type="checkbox" id="scales" name="scales" checked>
+        <label for="scales">Yes, I confirm.</label><br/>
+        <button class="favorite styled">Add employee</button>
+    </form>
+  </div>
+  </body>
+</html>
